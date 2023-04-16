@@ -1,0 +1,53 @@
+<div class="container text-center bg-body-tertiary">
+    <div class="row">
+        <div class="col-1">
+            &nbsp;
+        </div>
+        <div class="col-1">
+            &nbsp;
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-1">
+            &nbsp;
+        </div>
+        <div class="col">
+            &nbsp;
+        </div>
+        <div class="col-1">
+            &nbsp;
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-1">
+            &nbsp;
+        </div>
+<div class="row">
+    <table class="rounded table table-striped-columns">
+        <thead>
+           <tr>
+            <th scope="col">Nome:</th>
+            <th scope="col">Telefone:</th>
+            <th scope="col">Origem:</th>
+            <th scope="col">Data do contato:</th>
+            <th scope="col">Observação:</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            {{#each post}}
+                {{#dataValues}}
+                <td>{{nome}}</td>
+                <td>{{telefone}}</td>
+                <td>{{origem}}</td>
+                <td>{{data_contato}}</td>
+                <td>{{observacao}}</td>
+            </tr>
+                {{/dataValues}}
+            {{/each}}
+            <tr>
+        </tbody>
+        </table>
+    </div>
+</div>
+</div>
