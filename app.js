@@ -70,7 +70,6 @@ app.post("/atualizar", function(req, res){
     })
 })
 
-
 app.listen(8081, function(){
     console.log("Servidor Ativo")
 })
